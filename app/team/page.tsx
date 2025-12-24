@@ -54,7 +54,7 @@ export default function TeamPage() {
           {/* Doctor 2 (Reversed) */}
           <div className="flex flex-col lg:flex-row-reverse gap-12 items-start">
             <div className="lg:w-1/3 relative">
-              <div className="aspect-[3/4] relative overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+              <div className="aspect-[3/4] relative overflow-hidden transition-all duration-700">
                 <Image 
                   src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1964&auto=format&fit=crop" 
                   alt="Dr. Michael Ross"
@@ -83,7 +83,7 @@ export default function TeamPage() {
           {/* Doctor 3 */}
           <div className="flex flex-col lg:flex-row gap-12 items-start">
             <div className="lg:w-1/3 relative">
-              <div className="aspect-[3/4] relative overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+              <div className="aspect-[3/4] relative overflow-hidden transition-all duration-700">
                 <Image 
                   src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=1974&auto=format&fit=crop" 
                   alt="Dr. Emily White"
@@ -112,7 +112,7 @@ export default function TeamPage() {
           {/* Doctor 4 (Reversed) */}
           <div className="flex flex-col lg:flex-row-reverse gap-12 items-start">
             <div className="lg:w-1/3 relative">
-              <div className="aspect-[3/4] relative overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+              <div className="aspect-[3/4] relative overflow-hidden transition-all duration-700">
                 <Image 
                   src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop" 
                   alt="Dr. James Wilson"
