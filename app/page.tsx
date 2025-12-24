@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Star, Quote } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -56,9 +56,13 @@ export default function Home() {
                   <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <div className="flex items-center -space-x-3">
-                   {[1,2,3].map(i => (
-                    <div key={i} className="w-10 h-10 rounded-full border-2 border-[#FAFAF9] overflow-hidden">
-                      <Image src={`https://randomuser.me/api/portraits/women/${i + 40}.jpg`} alt="Client" width={40} height={40} />
+                   {[
+                     "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&auto=format&fit=crop&q=60",
+                     "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=60",
+                     "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&auto=format&fit=crop&q=60"
+                   ].map((src, i) => (
+                    <div key={i} className="w-10 h-10 rounded-full border-2 border-[#FAFAF9] overflow-hidden relative">
+                      <Image src={src} alt="Client" fill className="object-cover" />
                     </div>
                   ))}
                 </div>
@@ -106,8 +110,8 @@ export default function Home() {
               <p className="text-slate-500 leading-relaxed mb-8">
                 Gone are the days of clinical smells and harsh lighting. We've reimagined the dental experience to be as relaxing as a spa visit.
               </p>
-              <Link href="/about" className="text-teal-700 font-bold tracking-wide uppercase text-sm hover:text-teal-900 border-b border-teal-200 pb-1">
-                Read our story
+              <Link href="/team" className="text-teal-700 font-bold tracking-wide uppercase text-sm hover:text-teal-900 border-b border-teal-200 pb-1">
+                Meet our team
               </Link>
             </div>
             <div className="lg:w-2/3 grid md:grid-cols-2 gap-8">

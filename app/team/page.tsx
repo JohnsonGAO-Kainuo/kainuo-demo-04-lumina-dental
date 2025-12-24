@@ -79,9 +79,66 @@ export default function TeamPage() {
               </div>
             </div>
           </div>
+
+          {/* Doctor 3 */}
+          <div className="flex flex-col lg:flex-row gap-12 items-start">
+            <div className="lg:w-1/3 relative">
+              <div className="aspect-[3/4] relative overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                <Image 
+                  src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=1974&auto=format&fit=crop" 
+                  alt="Dr. Emily White"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-6 bg-[#FAFAF9] p-6 border border-stone-200">
+                <p className="font-serif text-2xl">Dr. Emily White</p>
+                <p className="text-teal-600 text-sm font-bold tracking-wider uppercase">Pediatric Specialist</p>
+              </div>
+            </div>
+            <div className="lg:w-2/3 lg:pt-12">
+              <h2 className="font-serif text-4xl mb-8 leading-snug">"Building healthy habits starts with a happy first visit."</h2>
+              <div className="grid md:grid-cols-2 gap-12 text-slate-500 leading-relaxed">
+                <p>
+                  Dr. Emily creates a fun, fear-free environment for our youngest patients. She understands that early positive experiences shape a lifetime of dental health.
+                </p>
+                <p>
+                  From preventive sealants to gentle cleanings, she works closely with parents to ensure every child leaves with a smile and a prize.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Doctor 4 (Reversed) */}
+          <div className="flex flex-col lg:flex-row-reverse gap-12 items-start">
+            <div className="lg:w-1/3 relative">
+              <div className="aspect-[3/4] relative overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                <Image 
+                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop" 
+                  alt="Dr. James Wilson"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+               <div className="absolute -bottom-6 -left-6 bg-[#FAFAF9] p-6 border border-stone-200 text-right">
+                <p className="font-serif text-2xl">Dr. James Wilson</p>
+                <p className="text-teal-600 text-sm font-bold tracking-wider uppercase">Oral Surgeon</p>
+              </div>
+            </div>
+            <div className="lg:w-2/3 lg:pt-12 text-right">
+              <h2 className="font-serif text-4xl mb-8 leading-snug">"Restoring function is the first step to restoring confidence."</h2>
+              <div className="grid md:grid-cols-2 gap-12 text-slate-500 leading-relaxed text-left">
+                <p>
+                  As our specialist in implantology and oral surgery, Dr. Wilson handles complex restorative procedures. He is known for his gentle touch and expertise in sedation dentistry.
+                </p>
+                <p>
+                  Using advanced guided surgery techniques, he ensures precise implant placement with minimal recovery time, giving patients their bite back faster.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 }
-
