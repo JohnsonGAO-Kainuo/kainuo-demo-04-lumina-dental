@@ -21,7 +21,7 @@ const BeforeAfterSlider = () => {
       }}
     >
       <Image 
-        src="https://plus.unsplash.com/premium_photo-1661764570116-b1b0a2da78f5?q=80&w=2070&auto=format&fit=crop" 
+        src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=2070&auto=format&fit=crop" 
         alt="After - Perfect Smile"
         fill
         className="object-cover"
