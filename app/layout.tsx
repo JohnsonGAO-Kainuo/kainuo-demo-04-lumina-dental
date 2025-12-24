@@ -1,13 +1,25 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Playfair_Display, Lato } from "next/font/google";
+import Navbar from "@/components/Navbar";
 import SocialWidget from "@/components/SocialWidget";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const playfair = Playfair_Display({ 
+  subsets: ["latin"], 
+  variable: "--font-serif",
+  display: "swap",
+});
+
+const lato = Lato({ 
+  subsets: ["latin"], 
+  weight: ["300", "400", "700"],
+  variable: "--font-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "Lumina Dental | Modern Family Dentistry",
-  description: "Experience pain-free, advanced dental care in a relaxing environment.",
+  title: "Lumina Dental | Boutique Aesthetic Dentistry",
+  description: "Experience the art of dentistry. Specialized in cosmetic transformations and advanced restoration.",
 };
 
 export default function RootLayout({
@@ -17,7 +29,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-slate-50 text-slate-800`}>
+      <body className={`${lato.variable} ${playfair.variable} font-sans bg-[#FAFAF9] text-slate-600 antialiased`}>
+        <Navbar />
         {children}
         <SocialWidget />
       </body>
