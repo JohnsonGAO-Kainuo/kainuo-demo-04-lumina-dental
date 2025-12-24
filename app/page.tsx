@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Facebook, Instagram, Twitter, Linkedin, Mail } from "lucide-react";
 
 export default function Home() {
   return (
@@ -164,6 +165,70 @@ export default function Home() {
            </div>
         </div>
       </section>
+      
+      {/* Footer */}
+      <footer className="bg-slate-900 text-slate-300 py-16">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-4 gap-12 mb-12">
+            <div className="col-span-1 md:col-span-2">
+              <span className="font-serif text-3xl text-white font-bold tracking-tight mb-6 block">Lumina<span className="text-teal-500">.</span></span>
+              <p className="text-slate-400 max-w-sm mb-6">
+                Redefining the dental experience with cutting-edge technology and a compassionate touch. Your smile is our masterpiece.
+              </p>
+              <div className="flex gap-4">
+                <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-teal-600 hover:text-white transition-colors">
+                  <Facebook size={18} />
+                </a>
+                <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-teal-600 hover:text-white transition-colors">
+                  <Instagram size={18} />
+                </a>
+                <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-teal-600 hover:text-white transition-colors">
+                  <Twitter size={18} />
+                </a>
+                <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-teal-600 hover:text-white transition-colors">
+                  <Linkedin size={18} />
+                </a>
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="text-white font-bold mb-6">Quick Links</h4>
+              <ul className="space-y-3">
+                <li><Link href="/services" className="hover:text-teal-400 transition-colors">Treatments</Link></li>
+                <li><Link href="/gallery" className="hover:text-teal-400 transition-colors">Smile Gallery</Link></li>
+                <li><Link href="/team" className="hover:text-teal-400 transition-colors">Our Specialists</Link></li>
+                <li><Link href="/contact" className="hover:text-teal-400 transition-colors">Book Online</Link></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="text-white font-bold mb-6">Contact</h4>
+              <ul className="space-y-3 text-slate-400">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1"><ArrowRight size={14} className="text-teal-500" /></span>
+                  123 Medical Center Blvd<br/>Beverly Hills, CA 90210
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="mt-0.5"><ArrowRight size={14} className="text-teal-500" /></span>
+                  <a href="tel:+15551234567" className="hover:text-white">+1 (555) 123-4567</a>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="mt-0.5"><ArrowRight size={14} className="text-teal-500" /></span>
+                  <a href="mailto:hello@luminadental.com" className="hover:text-white">hello@luminadental.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+            <p>&copy; {new Date().getFullYear()} Lumina Dental. All rights reserved.</p>
+            <div className="flex gap-6 mt-4 md:mt-0">
+              <Link href="#" className="hover:text-white">Privacy Policy</Link>
+              <Link href="#" className="hover:text-white">Terms of Service</Link>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

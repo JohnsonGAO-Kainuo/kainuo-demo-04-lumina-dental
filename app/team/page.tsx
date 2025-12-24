@@ -15,7 +15,7 @@ export default function TeamPage() {
           {/* Doctor 1 */}
           <div className="flex flex-col lg:flex-row gap-12 items-start">
             <div className="lg:w-1/3 relative">
-              <div className="aspect-[3/4] relative overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+              <div className="aspect-[3/4] relative overflow-hidden transition-all duration-700">
                 <Image 
                   src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop" 
                   alt="Dr. Sarah Chen"
